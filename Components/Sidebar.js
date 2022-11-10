@@ -14,7 +14,11 @@ export default function Sidebar() {
   return (
     <div>
         {/*Twitter Logo*/}
+        <div className="">
         <Image src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" width="50" height="50"></Image>
+        </div>
+         {/*Menu*/}
+         <div>
         <SidebarMenuitem text="Home" Icon={HomeIcon}/>
         <SidebarMenuitem text="Explore" Icon={HashtagIcon}/>
         <SidebarMenuitem text="Notification" Icon={BellIcon}/>
@@ -23,7 +27,7 @@ export default function Sidebar() {
         <SidebarMenuitem text="Lists" Icon={ClipboardIcon}/>
         <SidebarMenuitem text="Profile" Icon={UserIcon}/>
         <SidebarMenuitem text="More" Icon={DotsCircleHorizontalIcon}/>
-
+        </div>
         <button>Tweet</button>
         <div className="">
             <Image width={50} height={50} alt="userimage" src={"https://www.upwork.com/profile-portraits/c1GwQzOgWR4bnBto0ssa6my1CYrQq2Dz8wFZN-XnUDUX50AM0aa99UvP-FAxUP16FD"}></Image>
@@ -33,7 +37,7 @@ export default function Sidebar() {
             </div>
             <DotsHorizontalIcon className="h-5"  />
         </div>
-        {/*Menu*/}
+       
         {/*Button*/}
         {/*Mini - Profile*/}
     </div>
