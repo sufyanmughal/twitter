@@ -14,7 +14,7 @@ export default function Sidebar() {
   return (
     <div>
         {/*Twitter Logo*/}
-        <div className="">
+        <div className="hoverEffect">
         <Image src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" width="50" height="50"></Image>
         </div>
          {/*Menu*/}
