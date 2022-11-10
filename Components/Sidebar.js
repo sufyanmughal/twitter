@@ -12,14 +12,14 @@ import {DotsHorizontalIcon} from "@heroicons/react/solid"
 
 export default function Sidebar() {
   return (
-    <div>
+    <div className="hidden sm:flex flex-col p-2 xl:items-start fixed h-full">
         {/*Twitter Logo*/}
         <div className="hoverEffect">
         <Image src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" width="50" height="50"></Image>
         </div>
          {/*Menu*/}
          <div>
-        <SidebarMenuitem text="Home" Icon={HomeIcon}/>
+        <SidebarMenuitem text="Home" Icon={HomeIcon} active/>
         <SidebarMenuitem text="Explore" Icon={HashtagIcon}/>
         <SidebarMenuitem text="Notification" Icon={BellIcon}/>
         <SidebarMenuitem text="Messages" Icon={InboxIcon}/>
@@ -28,8 +28,8 @@ export default function Sidebar() {
         <SidebarMenuitem text="Profile" Icon={UserIcon}/>
         <SidebarMenuitem text="More" Icon={DotsCircleHorizontalIcon}/>
         </div>
-        <button>Tweet</button>
-        <div className="">
+        <button className="bg-blue-400 text-white rounded-full w-56 h-12 font-bold shadow-md hover:brightness-95 text-lg hidden xl:inline">Tweet</button>
+        <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
             <Image width={50} height={50} alt="userimage" src={"https://www.upwork.com/profile-portraits/c1GwQzOgWR4bnBto0ssa6my1CYrQq2Dz8wFZN-XnUDUX50AM0aa99UvP-FAxUP16FD"}></Image>
             <div>
                 <h4>Sufyan ahmad</h4>
