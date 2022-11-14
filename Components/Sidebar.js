@@ -17,7 +17,7 @@ export default function Sidebar() {
         <div className="hoverEffect p-0 hover:bg-blue-100 xl:px-1">
         <Image src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" width="50" height="50"></Image>
         </div>
-         {/*Menu*/}
+        {/*Menu*/}
         <div className="mt-4 mb-2.5 xl:items-start">
         <SidebarMenuitem text="Home" Icon={HomeIcon} active/>
         <SidebarMenuitem text="Explore" Icon={HashtagIcon}/>
@@ -35,7 +35,7 @@ export default function Sidebar() {
                 <h4 className="font-bold">Sufyan ahmad</h4>
                 <p className="text-gray-500">@sufyanmughal</p>
             </div>
-            <DotsHorizontalIcon className="h-5 xl:ml-8"  />
+            <DotsHorizontalIcon className="h-5 xl:ml-8" />
         </div>
        
         {/*Button*/}
